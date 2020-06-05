@@ -10,6 +10,14 @@ import UIKit
 
 class BigTableViewCell: UITableViewCell {
     
+    let imvToConfig: UIImageView = {
+        let imv = UIImageView()
+        imv.contentMode = .scaleAspectFill
+        imv.layer.masksToBounds = true
+        imv.translatesAutoresizingMaskIntoConstraints = false
+        return imv
+    }()
+    
     let vwDiagonal: UIView = {
         let vw = UIView()
         vw.transform = vw.transform.rotated(by:  -.pi / 4)
@@ -331,6 +339,7 @@ class BigTableViewCell: UITableViewCell {
         vwView.addSubview(vwButton2)
         vwView.addSubview(btnButtonBlue)
         
+        vwTopContainer.addSubview(imvToConfig)
         vwTopContainer.addSubview(vwDiagonal)
         vwTopContainer.addSubview(btnTop)
         vwTopContainer.addSubview(lblTop)
@@ -362,6 +371,13 @@ class BigTableViewCell: UITableViewCell {
 
         vwDiagonal.addSubview(lblDiagonal)
         
+        imvToConfig.topAnchor.constraint(equalTo: vwTopContainer.topAnchor, constant: 10).isActive = true
+        imvToConfig.bottomAnchor.constraint(equalTo: lblTop.topAnchor, constant: -10).isActive = true
+        imvToConfig.leftAnchor.constraint(equalTo: vwTopContainer.leftAnchor, constant: 40).isActive = true
+        imvToConfig.rightAnchor.constraint(equalTo: vwTopContainer.rightAnchor, constant: -40).isActive = true
+        imvToConfig.heightAnchor.constraint(equalToConstant: 30).isActive = true
+
+        
         lblDiagonal.topAnchor.constraint(equalTo: vwDiagonal.topAnchor, constant: 4).isActive = true
         lblDiagonal.bottomAnchor.constraint(equalTo: vwDiagonal.bottomAnchor, constant: -4).isActive = true
         lblDiagonal.leftAnchor.constraint(equalTo: vwDiagonal.leftAnchor, constant: 4).isActive = true
@@ -373,7 +389,7 @@ class BigTableViewCell: UITableViewCell {
         btnTop.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
         lblTop.centerXAnchor.constraint(equalTo: vwTopContainer.centerXAnchor).isActive = true
-        lblTop.topAnchor.constraint(equalTo: vwTopContainer.topAnchor, constant: 28).isActive = true
+        //lblTop.topAnchor.constraint(equalTo: vwTopContainer.topAnchor, constant: 28).isActive = true
         lblTop.bottomAnchor.constraint(equalTo: lblFirst.topAnchor, constant: -12).isActive = true
         
         lblFirst.centerXAnchor.constraint(equalTo: vwTopContainer.centerXAnchor).isActive = true
@@ -433,6 +449,10 @@ class BigTableViewCell: UITableViewCell {
         btnButtonBlue.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         vwView.bringSubviewToFront(vwTopContainer)
+    }
+    
+    func configWithImage(img: UIImage) {
+        imvToConfig.image = img
     }
     
 }

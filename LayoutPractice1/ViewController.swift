@@ -143,8 +143,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BigTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BigTableViewCell", for: indexPath) as! BigTableViewCell
         cell.selectionStyle = .none
+        
+        if indexPath.row == 0 {
+            cell.configWithImage(img: UIImage(named: "img")!)
+        }
         
         return cell
     }
