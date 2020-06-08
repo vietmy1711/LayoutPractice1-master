@@ -12,7 +12,7 @@ class BigTableViewCell: UITableViewCell {
     
     let imvToConfig: UIImageView = {
         let imv = UIImageView()
-        imv.contentMode = .scaleAspectFill
+        imv.contentMode = .scaleAspectFit
         imv.layer.masksToBounds = true
         imv.translatesAutoresizingMaskIntoConstraints = false
         return imv

@@ -107,7 +107,6 @@ class ViewController: UIViewController {
             popover.sourceRect = self.dropDown.bounds
             popover.delegate = self
         }
-
         popupTestVC.preferredContentSize = CGSize(width: 242, height: 152)
         self.present(popupTestVC, animated: true)
     }
