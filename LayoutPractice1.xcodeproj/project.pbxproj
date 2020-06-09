@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1175E4248F7540006ADD16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1175E2248F7540006ADD16 /* CollectionViewCell.swift */; };
+		8D1175E5248F7540006ADD16 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1175E3248F7540006ADD16 /* CollectionViewCell.xib */; };
 		8D429E6B246E729700B45CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D429E6A246E729700B45CD7 /* AppDelegate.swift */; };
 		8D429E6D246E729700B45CD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D429E6C246E729700B45CD7 /* SceneDelegate.swift */; };
 		8D429E6F246E729700B45CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D429E6E246E729700B45CD7 /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D1175E2248F7540006ADD16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8D1175E3248F7540006ADD16 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		8D429E67246E729700B45CD7 /* LayoutPractice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutPractice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D429E6A246E729700B45CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D429E6C246E729700B45CD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			children = (
 				8DEAFD06248E3E5C00973000 /* CollectionViewController.swift */,
 				8DEAFD07248E3E5C00973000 /* CollectionViewController.xib */,
+				8D1175E2248F7540006ADD16 /* CollectionViewCell.swift */,
+				8D1175E3248F7540006ADD16 /* CollectionViewCell.xib */,
 			);
 			path = CollectionViewPaging;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEAFD09248E3E5C00973000 /* CollectionViewController.xib in Resources */,
+				8D1175E5248F7540006ADD16 /* CollectionViewCell.xib in Resources */,
 				8D429E77246E729A00B45CD7 /* LaunchScreen.storyboard in Resources */,
 				DEA37F512472E356007F4881 /* PopupTestVC.xib in Resources */,
 				8D429E74246E729A00B45CD7 /* Assets.xcassets in Resources */,
@@ -213,6 +220,7 @@
 				8DEAFD03248E2B1100973000 /* RatingViewController.swift in Sources */,
 				8D429E6D246E729700B45CD7 /* SceneDelegate.swift in Sources */,
 				8D7C44F5246E9D19005C3D8E /* PopupViewController.swift in Sources */,
+				8D1175E4248F7540006ADD16 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
