@@ -29,6 +29,9 @@
                 <constraint firstItem="ls8-a6-JNn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="z5A-vC-7k7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="vwContainer" destination="ls8-a6-JNn" id="p2t-F5-Kqy"/>
+            </connections>
             <point key="canvasLocation" x="128" y="139"/>
         </collectionViewCell>
     </objects>

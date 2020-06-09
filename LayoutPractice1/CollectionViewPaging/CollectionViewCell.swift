@@ -10,9 +10,14 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var vwContainer: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configWithColor(_ color: UIColor) {
+        vwContainer.backgroundColor = color
     }
 
 }
