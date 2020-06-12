@@ -10,15 +10,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="LayoutPractice1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="336" height="131"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="336" height="131"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ls8-a6-JNn">
-                        <rect key="frame" x="4" y="4" width="42" height="42"/>
+                        <rect key="frame" x="4" y="4" width="328" height="123"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7aU-Dd-cuM">
+                                <rect key="frame" x="0.0" y="0.0" width="328" height="123"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7aU-Dd-cuM" firstAttribute="top" secondItem="ls8-a6-JNn" secondAttribute="top" id="7TQ-ZG-zUO"/>
+                            <constraint firstAttribute="trailing" secondItem="7aU-Dd-cuM" secondAttribute="trailing" id="A3r-uT-8Hz"/>
+                            <constraint firstAttribute="bottom" secondItem="7aU-Dd-cuM" secondAttribute="bottom" id="OhB-fl-y9i"/>
+                            <constraint firstItem="7aU-Dd-cuM" firstAttribute="leading" secondItem="ls8-a6-JNn" secondAttribute="leading" id="sQu-qc-mgK"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -29,10 +40,12 @@
                 <constraint firstItem="ls8-a6-JNn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="z5A-vC-7k7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="336" height="131"/>
             <connections>
+                <outlet property="imv" destination="7aU-Dd-cuM" id="H0c-Hp-Gow"/>
                 <outlet property="vwContainer" destination="ls8-a6-JNn" id="p2t-F5-Kqy"/>
             </connections>
-            <point key="canvasLocation" x="128" y="139"/>
+            <point key="canvasLocation" x="334.78260869565219" y="165.73660714285714"/>
         </collectionViewCell>
     </objects>
 </document>

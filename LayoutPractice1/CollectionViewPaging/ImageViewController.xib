@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="LayoutPractice1" customModuleProvider="target">
+            <connections>
+                <outlet property="imvImage" destination="wZy-Hq-AtH" id="iaa-WN-lrr"/>
+                <outlet property="scrollView" destination="fdb-63-UyK" id="8Zz-Sw-IN7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-63-UyK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zs9-aZ-tro">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="855.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="wZy-Hq-AtH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="4Yt-T8-m2s"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="wZy-Hq-AtH" firstAttribute="top" secondItem="zs9-aZ-tro" secondAttribute="top" id="8sd-OL-imE"/>
+                                <constraint firstItem="wZy-Hq-AtH" firstAttribute="leading" secondItem="zs9-aZ-tro" secondAttribute="leading" id="EZT-QS-v8u"/>
+                                <constraint firstAttribute="trailing" secondItem="wZy-Hq-AtH" secondAttribute="trailing" id="MoX-vh-ceQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zs9-aZ-tro" secondAttribute="bottom" constant="-36.5" id="PB1-wH-sf1"/>
+                        <constraint firstItem="zs9-aZ-tro" firstAttribute="top" secondItem="fdb-63-UyK" secondAttribute="top" id="XLL-EA-6Mx"/>
+                        <constraint firstItem="zs9-aZ-tro" firstAttribute="leading" secondItem="fdb-63-UyK" secondAttribute="leading" id="dGJ-Hs-Al1"/>
+                        <constraint firstItem="zs9-aZ-tro" firstAttribute="height" secondItem="fdb-63-UyK" secondAttribute="height" multiplier="1.04563" id="hYV-hD-cC1"/>
+                        <constraint firstAttribute="trailing" secondItem="zs9-aZ-tro" secondAttribute="trailing" id="tGZ-Mh-afI"/>
+                        <constraint firstItem="zs9-aZ-tro" firstAttribute="width" secondItem="fdb-63-UyK" secondAttribute="width" id="z8q-by-gcl"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="rKP-qA-n4w"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="WKi-EY-Fu8"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fdb-63-UyK" secondAttribute="trailing" id="6ad-je-MrH"/>
+                <constraint firstItem="fdb-63-UyK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CUE-wv-lJ3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fdb-63-UyK" secondAttribute="bottom" id="G2q-pz-dyZ"/>
+                <constraint firstItem="fdb-63-UyK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="liB-SO-AFR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="127.53623188405798" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img" width="1000" height="1000"/>
+    </resources>
+</document>

@@ -17,6 +17,8 @@
 		8D429E77246E729A00B45CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D429E75246E729A00B45CD7 /* LaunchScreen.storyboard */; };
 		8D450830247271AE008FF761 /* BigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45082F247271AE008FF761 /* BigTableViewCell.swift */; };
 		8D4508322472724E008FF761 /* SmallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4508312472724E008FF761 /* SmallTableViewCell.swift */; };
+		8D7291CD2493669F001F9796 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7291CB2493669F001F9796 /* ImageViewController.swift */; };
+		8D7291CE2493669F001F9796 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7291CC2493669F001F9796 /* ImageViewController.xib */; };
 		8D7C44F5246E9D19005C3D8E /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7C44F4246E9D19005C3D8E /* PopupViewController.swift */; };
 		8DEAFCFC248E22A900973000 /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAFCFB248E22A900973000 /* RatingStarView.swift */; };
 		8DEAFD03248E2B1100973000 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAFD01248E2B1100973000 /* RatingViewController.swift */; };
@@ -40,6 +42,8 @@
 		8D429E78246E729A00B45CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D45082F247271AE008FF761 /* BigTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTableViewCell.swift; sourceTree = "<group>"; };
 		8D4508312472724E008FF761 /* SmallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTableViewCell.swift; sourceTree = "<group>"; };
+		8D7291CB2493669F001F9796 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		8D7291CC2493669F001F9796 /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		8D7C44F4246E9D19005C3D8E /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		8DEAFCFB248E22A900973000 /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		8DEAFD01248E2B1100973000 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				8DEAFD07248E3E5C00973000 /* CollectionViewController.xib */,
 				8D1175E2248F7540006ADD16 /* CollectionViewCell.swift */,
 				8D1175E3248F7540006ADD16 /* CollectionViewCell.xib */,
+				8D7291CB2493669F001F9796 /* ImageViewController.swift */,
+				8D7291CC2493669F001F9796 /* ImageViewController.xib */,
 			);
 			path = CollectionViewPaging;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 			files = (
 				8DEAFD09248E3E5C00973000 /* CollectionViewController.xib in Resources */,
 				8D1175E5248F7540006ADD16 /* CollectionViewCell.xib in Resources */,
+				8D7291CE2493669F001F9796 /* ImageViewController.xib in Resources */,
 				8D429E77246E729A00B45CD7 /* LaunchScreen.storyboard in Resources */,
 				DEA37F512472E356007F4881 /* PopupTestVC.xib in Resources */,
 				8D429E74246E729A00B45CD7 /* Assets.xcassets in Resources */,
@@ -220,6 +227,7 @@
 				8DEAFD03248E2B1100973000 /* RatingViewController.swift in Sources */,
 				8D429E6D246E729700B45CD7 /* SceneDelegate.swift in Sources */,
 				8D7C44F5246E9D19005C3D8E /* PopupViewController.swift in Sources */,
+				8D7291CD2493669F001F9796 /* ImageViewController.swift in Sources */,
 				8D1175E4248F7540006ADD16 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

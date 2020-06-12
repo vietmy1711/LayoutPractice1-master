@@ -11,13 +11,14 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var vwContainer: UIView!
+    @IBOutlet weak var imv: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func configWithColor(_ color: UIColor) {
-        vwContainer.backgroundColor = color
+    func configWithImage(_ img: UIImage) {
+        imv.image = img
     }
 
 }
