@@ -39,18 +39,35 @@
                         <constraint firstAttribute="height" constant="20" id="aBV-oN-Owz"/>
                     </constraints>
                 </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-iA-tg0">
+                    <rect key="frame" x="348" y="194" width="46" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NBT-bn-H0c"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="square.grid.2x2" catalog="system"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="-1" eventType="touchUpInside" id="BzZ-Qn-Q54"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="GnE-cE-fiA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ii8-ee-rg2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rPO-HK-AlC" secondAttribute="trailing" id="KMT-E6-BJv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v7f-iA-tg0" secondAttribute="trailing" constant="20" id="RJd-6d-Re5"/>
+                <constraint firstItem="v7f-iA-tg0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="VEh-kC-lWw"/>
                 <constraint firstItem="GnE-cE-fiA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XhB-PP-Wob"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GnE-cE-fiA" secondAttribute="trailing" id="c18-A7-yUz"/>
                 <constraint firstItem="rPO-HK-AlC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="180" id="nGk-b8-rgx"/>
+                <constraint firstItem="v7f-iA-tg0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="348" id="uiT-Wj-SIL"/>
                 <constraint firstItem="rPO-HK-AlC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yDi-gg-Hty"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>
+    <resources>
+        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+    </resources>
 </document>

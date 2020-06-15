@@ -32,6 +32,13 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
     }
     
+    @IBAction func btnClicked(_ sender: UIButton) {
+        let galleryVC = GalleryViewController(nibName: "GalleryViewController", bundle: nil)
+        galleryVC.configWithData(imageArray)
+        galleryVC.navigationItem.title = "Gallery"
+        navigationController?.pushViewController(galleryVC, animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArray.count
     }
@@ -69,4 +76,5 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         let point = view.convert(collectionView.center, to: collectionView)
         pageControl.currentPage = collectionView.indexPathForItem(at: point)!.row
     }
+    
 }
